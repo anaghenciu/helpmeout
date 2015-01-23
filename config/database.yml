@@ -82,5 +82,5 @@ production:
   <<: *default
   url: <%= ENV['HEROKU_POSTGRESQL_ONYX_URL'] %>
   database: helpmeout_production
-  username: zkdbfflhaoclsb
-  password: stOwo3FqILQUe20jpnBLefibpw
+  username: eteubnrikjruou
+  password: 1vwZ4kydfvHzncwJzjHdviVhCN
