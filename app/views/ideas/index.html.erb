@@ -3,14 +3,16 @@
 <h1>Listing Ideas</h1>
   <% @ideas.each do |idea| %>
     <article>
-      <h2><%= idea.name %></h2>
+      <%= link_to idea.name, idea, { :class=>"h2" } %>
+      
       <section><%= idea.description %></section>
       <div class="text-right">
-      <%= link_to 'Show', idea, { :class=>"btn btn-primary" } %>
+      
         <%= link_to 'Edit', edit_idea_path(idea), { :class=>"btn btn-primary" } %>
         <%= link_to 'Destroy', idea, :class=>"btn btn-danger",method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
     </article>
+    <hr/>
 
   <% end %>
 
