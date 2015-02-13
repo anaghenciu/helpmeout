@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Ideas</h1>
+<hr/>
   <% @ideas.each do |idea| %>
     <article>
       <%= link_to idea.name, idea, { :class=>"h2" } %>
