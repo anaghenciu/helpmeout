@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Ideas</h1>
+<h1>Developers storytelling</h1>
 <hr/>
   <% @ideas.each do |idea| %>
     <article>
@@ -9,8 +9,8 @@
       <section><%= idea.description %></section>
       <div class="text-right">
       
-        <%= link_to 'Edit', edit_idea_path(idea), { :class=>"btn btn-primary" } %>
-        <%= link_to 'Destroy', idea, :class=>"btn btn-danger",method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Edit', edit_idea_path(idea), {  :class=>"fa fa-pencil-square-o fa-lg" } %>
+        <%= link_to 'Delete', idea, :class=>"fa fa-trash-o fa-lg",method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
     </article>
     <hr/>
@@ -20,4 +20,4 @@
 
 <br>
 
-<%= link_to 'New Idea', new_idea_path, { :class=>"btn btn-primary" } %>
+<%= link_to 'Add article', new_idea_path, { :class=>"btn btn-default" } %>
