@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: helpmeout_development
+  database: helpmeout_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['HEROKU_POSTGRESQL_ONYX_URL'] %>
-  database: helpmeout_production
-  username: eteubnrikjruou
-  password: 1vwZ4kydfvHzncwJzjHdviVhCN
+  database: helpmeout_prod
+  username: ltxtwgnvmxslfm
+  password: y_p-1WkQo938mVlEqURiZntDY2
