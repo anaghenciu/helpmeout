@@ -7,13 +7,17 @@
       <%= link_to idea.name, idea, { :class=>"h2" } %>
       
       <section><%= idea.description %></section>
+
       <div class="text-right">
+
       <div class="btn btn-default">
         <%= link_to 'Edit', edit_idea_path(idea), {  :class=>"fa fa-pencil-square-o fa-lg" } %>
       </div>
+
       <div class="btn btn-default">
         <%= link_to 'Delete', idea, :class=>"fa fa-trash-o fa-lg",method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
+      
       </div>
     </article>
     <hr/>
